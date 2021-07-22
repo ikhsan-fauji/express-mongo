@@ -1,0 +1,39 @@
+GET http://localhost:3000/projects
+content-type: application/json
+
+###
+
+GET http://localhost:3000/projects/60f99a3194020217782ea285
+content-type: application/json
+
+###
+
+POST http://localhost:3000/projects
+content-type: application/json
+
+{
+  "name": "Project 5",
+  "company": "Company 5",
+  "link": "github.com",
+  "github": "github.com"
+}
+
+###
+
+PUT http://localhost:3000/projects/60f99a3194020217782ea285
+content-type: application/json
+
+{
+  "name": "Project 3",
+  "company": "Company 3 Yeayyy"
+}
+
+###
+
+DELETE http://localhost:3000/projects/60f99a3194020217782ea285
+content-type: application/json
+
+{
+  "name": "Project 3",
+  "company": "Company 3 Yeayyy"
+}
